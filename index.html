@@ -226,6 +226,7 @@
             
             fetch(googleScriptURL, {
                 method: 'POST',
+                .setHeader("Access-Control-Allow-Origin", "*")
                 headers: {
                     'Content-Type': 'application/json',
                 },
